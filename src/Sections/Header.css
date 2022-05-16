@@ -1,0 +1,230 @@
+* {
+  font-family: poppins;
+}
+
+.Header {
+  background-color: rgb(255, 255, 255);
+  color: black;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.headerContainer {
+  width: 100%;
+  max-width: 1024px;
+  margin: 20px 0px 100px 0px;
+}
+
+.headerList {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 50px;
+}
+
+.headerListItem {
+  gap: 10px;
+  align-items: center;
+  display: flex;
+  cursor: pointer;
+  font-size: small;
+  color: #1259f5;
+}
+
+.headerListItem.active {
+  background-color: #d6e3ff;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.headerDesc {
+  margin-top: 15px;
+}
+
+.headerBtn {
+  background-color: blue;
+  color: white;
+  font-weight: 500;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.headerSearch {
+  height: 50px;
+  background: linear-gradient(
+    90deg,
+    rgb(57, 114, 171) 0%,
+    rgb(39, 39, 155) 5%,
+    rgb(10, 28, 170) 100%
+  );
+  border: 3px solid white;
+  display: flex;
+  align-items: center;
+  color: white;
+  justify-content: space-around;
+  padding: 10px 0px;
+  border-radius: 10px;
+  position: absolute;
+  width: 100%;
+  max-width: 1024px;
+  margin-top: 10px;
+}
+
+.headericon {
+  color: white;
+  margin-left: 10px;
+}
+
+.headerBtnSome {
+  background: rgb(206, 48, 48);
+  font-family: inherit;
+  padding: 10px;
+  font-weight: 500;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0.1em 0.1em;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.headerBtnSome:hover {
+  transform: translate(-0.12em, -0.12em);
+  box-shadow: 0.15em 0.15em;
+}
+
+.headerBtnSome:active {
+  transform: translate(0.05em, 0.05em);
+  box-shadow: 0.05em 0.05em;
+}
+
+.headerSearchItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.headerSearchInput {
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  padding: 10px;
+  width: 300px;
+}
+
+.date {
+  position: absolute;
+  top: 50px;
+  z-index: 2;
+}
+
+.h3 {
+  display: flex;
+  gap: 10px;
+}
+
+.h3Text {
+  background-color: rgb(224, 224, 224);
+  color: rgb(53, 53, 53);
+  font-weight: 500;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 10px;
+  box-shadow: rgba(230, 230, 243, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.headerTitle {
+  font-family: poppins;
+  font-weight: bolder;
+  font-size: 53px;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Cardo:wght@700&family=PT+Serif:wght@700&display=swap");
+
+.headerTitle2 {
+  font-family: poppins;
+  font-weight: 600;
+  font-size: 35px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.headerTitle2 {
+  font-family: poppins;
+  font-weight: 600;
+  font-size: 35px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  background-image: linear-gradient(
+    -225deg,
+    #0e23be 0%,
+    #100575 29%,
+    #767676 67%,
+    #4f30b2 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: flex;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.options {
+  position: absolute;
+  top: 50px;
+  background-color: rgb(233, 233, 233);
+  color: rgb(0, 0, 0);
+  border-radius: 6px;
+  box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
+  z-index: 2;
+}
+
+.optionItems {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+.optionCounterNumber {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+  color: black;
+}
+
+.optionCounterButton {
+  width: 30px;
+  height: 30px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: white;
+}
+
+.optionCounterButton:disabled {
+  cursor: not-allowed;
+  color: rgb(159, 0, 0);
+  border: 1px solid rgb(215, 6, 6);
+  background-color: rgb(255, 179, 152);
+}

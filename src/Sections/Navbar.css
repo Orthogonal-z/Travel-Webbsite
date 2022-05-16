@@ -1,0 +1,153 @@
+.Navbar {
+  height: 50px;
+  background: #1259f5;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.navContainer {
+  width: 100%;
+  max-width: 1024px;
+
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navButton {
+  margin-left: 20px;
+  cursor: poi;
+  border: none;
+  padding: 10px 15px;
+  font-family: "proxima-nova", sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  text-transform: uppercase !important;
+  letter-spacing: 2px;
+  color: #fff;
+  cursor: hand;
+  text-align: center;
+  text-transform: capitalize;
+  border: 1px solid #fff;
+  border-radius: 50px;
+  position: relative;
+  overflow: hidden !important;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background: transparent !important;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.navButton:hover {
+  border: 1px solid #071982;
+  color: #ffffff !important;
+  background: white;
+}
+
+.navItems {
+  display: flex;
+}
+
+.navButtonH {
+  cursor: pointer;
+  left: 40;
+  cursor: pointer;
+  background-image: white;
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+
+  -webkit-background-clip: text;
+
+  animation: textclip 2s linear infinite;
+  display: flex;
+  font-size: 18px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.logoSVG {
+  height: 50px;
+  width: auto;
+  display: block;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.navButton::before {
+  content: "";
+  width: 0%;
+  height: 100%;
+  display: block;
+  background: #071982;
+  position: absolute;
+  -ms-transform: skewX(-20deg);
+  -webkit-transform: skewX(-20deg);
+  transform: skewX(-20deg);
+  left: -10%;
+  opacity: 1;
+  top: 0;
+  z-index: -12;
+  -moz-transition: all 0.7s cubic-bezier(0.77, 0, 0.175, 1);
+  -o-transition: all 0.7s cubic-bezier(0.77, 0, 0.175, 1);
+  -webkit-transition: all 0.7s cubic-bezier(0.77, 0, 0.175, 1);
+  transition: all 0.7s cubic-bezier(0.77, 0, 0.175, 1);
+  box-shadow: 2px 0px 14px rgba(0, 0, 0, 0.6);
+}
+
+.navButton::after {
+  content: "";
+  width: 0%;
+  height: 100%;
+  display: block;
+  background: #809cff;
+  position: absolute;
+  -ms-transform: skewX(-20deg);
+  -webkit-transform: skewX(-20deg);
+  transform: skewX(-20deg);
+  left: -10%;
+  opacity: 0;
+  top: 0;
+  z-index: -15;
+  -webkit-transition: all 0.94s cubic-bezier(0.2, 0.95, 0.57, 0.99);
+  -moz-transition: all 0.4s cubic-bezier(0.2, 0.95, 0.57, 0.99);
+  -o-transition: all 0.4s cubic-bezier(0.2, 0.95, 0.57, 0.99);
+  transition: all 0.4s cubic-bezier(0.2, 0.95, 0.57, 0.99);
+  box-shadow: 2px 0px 14px rgba(0, 0, 0, 0.6);
+}
+.navButton:hover::before,
+.navButton:hover::before {
+  opacity: 1;
+  width: 116%;
+}
+.navButton:hover::after,
+.navButton:hover::after {
+  opacity: 1;
+  width: 120%;
+}
+
+.ul-nav {
+  display: flex;
+  gap: 50px;
+}
+
+.ul-nav li {
+  list-style-type: none;
+  cursor: pointer;
+}
+
+.ul-nav p {
+  font-weight: bold;
+}
